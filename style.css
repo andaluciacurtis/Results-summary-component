@@ -15,7 +15,7 @@ h1 {
 }
 
 .dim-font {
-  color: rgba(255, 255, 255, 0.6);
+  color: hsla(222, 100%, 96%, 0.733);
 }
 
 .container {
@@ -31,13 +31,9 @@ h1 {
   transform: translateY(-50%);
   
   display:flex;
-  width:650px;
+  width:630px;
   border-radius: 30px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
-}
-
-.column1, .column2 {
-  padding: 50px 30px;
+  box-shadow: 0px 10px 20px rgba(100, 100, 100, 0.1);
 }
 
 .column1 {
@@ -47,6 +43,7 @@ h1 {
   
   text-align: center;
   color: white;
+  padding: 40px 10px;
 }
 
 .your-result {
@@ -81,41 +78,67 @@ h1 {
 
   justify-content: center;
   flex-direction: column;
+  
+  padding: 0 20px;
 }
 
-.score-summary div {
-  background-color: hsl(0, 100%, 98%);
+.score-section {
+  background-color: hsla(222, 100%, 96%, 0.13);
   padding: 10px;
-  margin: 20px 0px;
+  margin: 20px 20px;
   border-radius: 10px;
   display: flex;
+  justify-content: space-between;
 }
 
-.section-score {
+.score-section:hover {
+  background-color:  hsla(241, 100%, 89%, 0.171);
+  transition-duration: 0.5s;
+}
+
+.reaction-title, .memory-title, .verbal-title, .visual-title {
+  display: flex;
+  
+  align-items: center;
+  gap: 10px;
+}
+
+.reaction-score, .memory-score, .verbal-score, .visual-score {
   font-weight: 800;
 }
 
-.score-summary div:nth-child(1) {
-  color: red;
+.possible-points {
+  color: hsl(241, 100%, 89%);
 }
 
-.score-summary div:nth-child(2) {
-  color: yellow;
+.reaction-title {
+  color: hsl(0, 100%, 67%);
 }
 
-.score-summary div:nth-child(3) {
-  color: green;
+.memory-title {
+  color: hsl(39, 100%, 56%);
 }
 
-.score-summary div:nth-child(4) {
-  color: blue;
+.verbal-title {
+  color: hsl(166, 100%, 37%);
+}
+
+.visual-title {
+  color: hsl(234, 85%, 45%);
 }
 
 .continue-button {
-  padding: 10px 70px;
-  background-color: hsl(241, 81%, 54%);
+  margin: 0 20px;
+  padding: 15px 0;
+  background-color: hsl(224, 30%, 27%);
   color: white;
   border-radius: 30px;
   border: none;
+  font-family: 'Hanken Grotesk', sans-serif;
+  cursor: pointer;
+}
+
+.continue-button:hover {
+  background-image:linear-gradient(hsl(252, 100%, 67%), hsl(241, 81%, 54%));
 }
 

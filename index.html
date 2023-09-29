@@ -5,26 +5,32 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
   <title>Results Summary Component</title>
+
+  <!-- CSS reset by Eric Meyers -->
+  <link rel="stylesheet" href="cssreset-meyers.css">
+
   <link href="style.css" rel="stylesheet" type="text/css" />
+  <!-- CSS for Hanken Grotesk -->
+  <link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <div class="container">
     <div class="main">
       <div class="column1">
-        <h2>Your Result</h2>
+        <h2 class="your-result dim-font">Your Result</h2>
         
         <div class="circle">
           <p class="total-score">76</p>
-          <p class="possible-points">of 100</p>
+          <p class="possible-points dim-font">of 100</p>
         </div>
 
-        <h2>Great</h2>
-        <p>You scored higher than 65% of the people who have taken these tests.</p>
+        <h1>Great</h1>
+        <p class="result-explanation dim-font">You scored higher than 65% of the people who have taken these tests.</p>
       </div>
 
       <div class="column2">
-        <p>Summary</p>
+        <!-- <p>Summary</p>
 
         <div class="score-summary">
           <div class="reaction">Reaction <span class="section-score"></span></p></div>
@@ -33,7 +39,7 @@
           <div class="visual">Visual</div>
         </div>
 
-        <button class="continue-button">Continue</button>
+        <button class="continue-button">Continue</button> -->
         
       </div>
     </div>

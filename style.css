@@ -1,24 +1,41 @@
 html {
   height: 100%;
   width: 100%;
+  font-family: 'Hanken Grotesk', sans-serif;
+  color: white;
+}
+
+h2 {
+  font-size: 1.4rem;
+}
+
+h1 {
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.dim-font {
+  color: rgba(255, 255, 255, 0.6);
 }
 
 .container {
-  height: 600px;
   width: 100%;
+
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 
 .main {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  
   display:flex;
   justify-content:center;
-  
-  height:400px;
+  height: fit-content;
   width:600px;
   border-radius: 30px;
-  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.15);
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
 }
 
 .column1 {
@@ -27,22 +44,34 @@ html {
   border-radius:30px;
   
   text-align: center;
-  color: white;
+  padding: 30px;
 }
 
+.your-result {
+  padding-bottom: 30px;
+}
+
+
 .circle {
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   border-radius: 100%;
   background-image: linear-gradient(hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
   margin: auto;
   
+  display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .total-score {
-  font-size: 3rem;
+  font-size: 4.3rem;
+  font-weight: bold;
+}
+
+.result-explanation {
+  margin: 0px 30px;
 }
 
 .column2 {

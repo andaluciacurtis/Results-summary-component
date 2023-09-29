@@ -2,16 +2,16 @@ html {
   height: 100%;
   width: 100%;
   font-family: 'Hanken Grotesk', sans-serif;
-  color: white;
 }
 
 h2 {
-  font-size: 1.4rem;
+  font-size: 1.2rem;
 }
 
 h1 {
   font-size: 1.7rem;
-  font-weight: bold;
+  padding: 20px;
+  font-weight: 800;
 }
 
 .dim-font {
@@ -31,11 +31,13 @@ h1 {
   transform: translateY(-50%);
   
   display:flex;
-  justify-content:center;
-  height: fit-content;
-  width:600px;
+  width:650px;
   border-radius: 30px;
   box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.column1, .column2 {
+  padding: 50px 30px;
 }
 
 .column1 {
@@ -44,13 +46,12 @@ h1 {
   border-radius:30px;
   
   text-align: center;
-  padding: 30px;
+  color: white;
 }
 
 .your-result {
-  padding-bottom: 30px;
+  padding-bottom: 40px;
 }
-
 
 .circle {
   height: 200px;
@@ -67,7 +68,7 @@ h1 {
 
 .total-score {
   font-size: 4.3rem;
-  font-weight: bold;
+  font-weight:800;
 }
 
 .result-explanation {
@@ -77,21 +78,44 @@ h1 {
 .column2 {
   width:50%;
   display: flex;
+
+  justify-content: center;
   flex-direction: column;
 }
 
 .score-summary div {
-  background-color: hsl(241, 81%, 54%);
+  background-color: hsl(0, 100%, 98%);
   padding: 10px;
-  margin: 10px 20px;
+  margin: 20px 0px;
   border-radius: 10px;
+  display: flex;
+}
+
+.section-score {
+  font-weight: 800;
+}
+
+.score-summary div:nth-child(1) {
+  color: red;
+}
+
+.score-summary div:nth-child(2) {
+  color: yellow;
+}
+
+.score-summary div:nth-child(3) {
+  color: green;
+}
+
+.score-summary div:nth-child(4) {
+  color: blue;
 }
 
 .continue-button {
   padding: 10px 70px;
   background-color: hsl(241, 81%, 54%);
   color: white;
-  margin: 20px auto;
   border-radius: 30px;
+  border: none;
 }
 

@@ -4,20 +4,41 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width">
-  <title>replit</title>
+  <title>Results Summary Component</title>
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
-  Hello world
-  <script src="script.js"></script>
+  <div class="container">
+    <div class="main">
+      <div class="column1">
+        <h2>Your Result</h2>
+        
+        <div class="circle">
+          <p class="total-score">76</p>
+          <p class="possible-points">of 100</p>
+        </div>
 
-  <!--
-  This script places a badge on your repl's full-browser view back to your repl's cover
-  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
-  teal, blue, blurple, magenta, pink!
-  -->
-  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+        <h2>Great</h2>
+        <p>You scored higher than 65% of the people who have taken these tests.</p>
+      </div>
+
+      <div class="column2">
+        <p>Summary</p>
+
+        <div class="score-summary">
+          <div class="reaction">Reaction <span class="section-score"></span></p></div>
+          <div class="memory">Memory</div>
+          <div class="verbal">Verbal</div>
+          <div class="visual">Visual</div>
+        </div>
+
+        <button class="continue-button">Continue</button>
+        
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

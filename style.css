@@ -83,7 +83,6 @@ h1 {
 }
 
 .score-section {
-  background-color: hsla(222, 100%, 96%, 0.13);
   padding: 10px;
   margin: 20px 20px;
   border-radius: 10px;
@@ -114,16 +113,33 @@ h1 {
   color: hsl(0, 100%, 67%);
 }
 
+.reaction-section {
+  background-color: hsla(0, 100%, 67%, 0.082);
+}
+
 .memory-title {
   color: hsl(39, 100%, 56%);
 }
+
+.memory-section {
+  background-color: hsla(39, 100%, 56%, 0.082);
+}
+
 
 .verbal-title {
   color: hsl(166, 100%, 37%);
 }
 
+.verbal-section {
+  background-color: hsla(166, 100%, 37%, 0.082);
+}
+
 .visual-title {
   color: hsl(234, 85%, 45%);
+}
+
+.visual-section {
+  background-color: hsla(234, 85%, 45%, 0.04);
 }
 
 .continue-button {

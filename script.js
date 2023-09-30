@@ -15,7 +15,8 @@ function displayResults(data) {
     let icon = section.icon;
 
     let sectionDiv = document.createElement("div");
-    sectionDiv.classList.add("score-section");
+    sectionDiv.classList.add(`score-section`);
+    sectionDiv.classList.add(`${name.toLowerCase()}-section`);
 
     sectionDiv.innerHTML = `
       <div class="score-title ${name.toLowerCase()}-title">

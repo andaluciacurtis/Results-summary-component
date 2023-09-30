@@ -96,14 +96,13 @@ h1 {
   transition-duration: 0.5s;
 }
 
-.reaction-title, .memory-title, .verbal-title, .visual-title {
+.score-title {
   display: flex;
-  
   align-items: center;
   gap: 10px;
 }
 
-.reaction-score, .memory-score, .verbal-score, .visual-score {
+.section-score {
   font-weight: 800;
 }
 
